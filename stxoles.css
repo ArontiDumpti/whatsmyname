@@ -1,0 +1,148 @@
+.navbar {
+    padding: 2rem;
+    background-color: #bdecc9;
+
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.hero {
+    background-color: #18191a;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+
+.hero-imagen-desarrollador {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+    margin: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
+    color: #bdecc9;
+}
+
+.seccion-clara {
+    color: #18191a;
+    background-color: whitesmoke;
+}
+
+.seccion-oscura {
+    color: whitesmoke;
+    background-color: #18191a;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px;
+    font-family: 'Bungee Spice', sans-serif;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+h2 {
+    color: #e4e6eb;
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+
+    }
+
+}
+
+
+#imagen-ampliada {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: rgb(219, 33, 207);
+    font-family: 'Bungee Spice', sans-serif;
+} 
+
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+    
+}
+
+.experiencia {
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: greenyellow;
+    background-color: rgb(56, 55, 52);
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
