@@ -1,8 +1,3 @@
-<?php
-    header("Location: sobremi.php");
-    exit();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
