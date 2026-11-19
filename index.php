@@ -1,3 +1,8 @@
+<?php
+    header("Location: sobre-mi.php");
+    exit();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -392,10 +397,7 @@
         </div>
     </section>
 
-    <?php
-        header("Location: sobre-mi.php");
-        exit();
-    ?>
+
 
     <!-- SECCION Footer  -->
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
