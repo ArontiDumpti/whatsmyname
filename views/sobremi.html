@@ -1,21 +1,502 @@
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Sobre mí</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sobre mí | Aronti Dunti</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Tipografías del proyecto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap"
+        rel="stylesheet">
+
+    <!-- IMPORTANTE: CSS ubicado en la carpeta principal -->
+    <link rel="stylesheet" href="../sttyzxoles.css">
+
+    <style>
+        /* Ajustes propios de la página Sobre mí */
+
+        body {
+            background-color: #242526;
+            color: #e4e6eb;
+        }
+
+        .sobre-hero {
+            min-height: 430px;
+            padding: 70px 20px 45px;
+            text-align: center;
+        }
+
+        .sobre-hero h1 {
+            font-family: 'Rubik Dirt', cursive;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            color: #e4e6eb;
+            margin: 25px 0 15px;
+        }
+
+        .sobre-hero h1 span {
+            color: #ff8c42;
+        }
+
+        .sobre-hero p {
+            max-width: 750px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #d1d1d1;
+        }
+
+        .sobre-logo {
+            width: 110px;
+            height: 110px;
+            object-fit: contain;
+        }
+
+        .sobre-contenido {
+            background-color: #e4e6eb;
+            color: #242526;
+            padding: 65px 20px;
+        }
+
+        .sobre-contenido .seccion-titulo {
+            color: #242526;
+        }
+
+        .sobre-contenido p {
+            font-size: 1.05rem;
+            line-height: 1.9;
+        }
+
+        .sobre-imagen {
+            max-width: 90%;
+            height: auto;
+        }
+
+        .tarjeta-personal {
+            background-color: #303236;
+            color: #e4e6eb;
+            border-radius: 18px;
+            padding: 30px 22px;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .tarjeta-personal:hover {
+            transform: translateY(-8px);
+        }
+
+        .tarjeta-personal i {
+            font-size: 2.5rem;
+            color: #ff914d;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta-personal h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta-personal p {
+            color: #c9c9c9;
+            line-height: 1.7;
+        }
+
+        .habilidades {
+            padding: 65px 20px;
+            background-color: #242526;
+        }
+
+        .habilidad-etiqueta {
+            display: inline-block;
+            background-color: #087990;
+            color: white;
+            padding: 9px 17px;
+            border-radius: 20px;
+            margin: 6px;
+            font-size: 0.95rem;
+        }
+
+        .frase-final {
+            background-color: #e4e6eb;
+            color: #242526;
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        .frase-final h2 {
+            font-family: 'Rubik Bubbles', cursive;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+        }
+
+        .btn-volver {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #0dcaf0;
+            color: #242526;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn-volver:hover {
+            background-color: #ff914d;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .sobre-footer {
+            padding: 35px 15px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Sobre mí</h1>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
 
-    <p>¡Hola! Bienvenido a mi espacio personal.</p>
+            <a class="navbar-brand" href="../index.html">
+                <img src="../fotos_pr16/logo_caballo.png"
+                    width="40" alt="Logo de la página">
+            </a>
 
-    <p>
-        Me gusta aprender, descubrir nuevas habilidades
-        y desarrollar proyectos tecnológicos.
-    </p>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menú">
 
-    <p>Gracias por visitar mi página.</p>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sobremi.html">
+                            Sobre mí
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#proyeptos">
+                            Proyectos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#tesminomo">
+                            Testimonios
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contaptos">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- PRESENTACIÓN PRINCIPAL -->
+    <section class="sobre-hero">
+
+        <img class="sobre-logo"
+            src="../fotos_pr16/cccccgoat-large.png"
+            alt="Logo de cabra">
+
+        <h1>¡Hola! Soy <span>Aaron</span></h1>
+
+        <p>
+            Bienvenido a mi pequeño rincón digital.
+            Soy una persona curiosa, apasionada por la tecnología
+            y con muchas ganas de aprender, experimentar
+            y crear cosas interesantes.
+        </p>
+
+        <p class="mt-3">
+            <i class="bi bi-code-slash"></i>
+            Aprendiendo, creando y convirtiendo ideas en proyectos.
+            <i class="bi bi-lightning-charge-fill"></i>
+        </p>
+
+    </section>
+
+
+    <!-- MI HISTORIA -->
+    <section class="sobre-contenido">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-12 col-md-6 mb-4">
+
+                    <h2 class="seccion-titulo">
+                        Un poco sobre mí
+                    </h2>
+
+                    <p>
+                        Me interesa el mundo de la tecnología y el
+                        desarrollo web. Disfruto descubrir cómo
+                        funcionan las páginas, las aplicaciones
+                        y las herramientas digitales que utilizamos
+                        todos los días.
+                    </p>
+
+                    <p>
+                        Actualmente estoy desarrollando mis
+                        conocimientos en programación, diseño web
+                        y creación de proyectos. Cada nuevo reto
+                        representa una oportunidad para mejorar
+                        y aprender algo diferente.
+                    </p>
+
+                    <p>
+                        No se trata solamente de escribir código:
+                        también me gusta experimentar, equivocarme,
+                        corregir y encontrar soluciones creativas.
+                    </p>
+
+                </div>
+
+                <div class="col-12 col-md-6 text-center">
+
+                    <img class="sobre-imagen img-fluid"
+                        src="../fotos_pr16/cacacacamonitor-rotate-15.png"
+                        alt="Monitor relacionado con tecnología">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LO QUE ME GUSTA -->
+    <section class="experiencia seccion-oscura py-5">
+
+        <div class="container text-center">
+
+            <h2 class="seccion-titulo texto-blanco mb-5">
+                ¿Qué me gusta hacer?
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-4">
+
+                    <div class="tarjeta-personal">
+
+                        <i class="bi bi-code-slash"></i>
+
+                        <h3>Crear proyectos</h3>
+
+                        <p>
+                            Diseñar páginas web, probar ideas
+                            y descubrir nuevas formas de
+                            desarrollar soluciones digitales.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-md-4">
+
+                    <div class="tarjeta-personal">
+
+                        <i class="bi bi-controller"></i>
+
+                        <h3>Explorar y divertirme</h3>
+
+                        <p>
+                            Disfrutar de los videojuegos,
+                            conocer nuevas experiencias
+                            y encontrar inspiración en
+                            diferentes mundos digitales.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-md-4">
+
+                    <div class="tarjeta-personal">
+
+                        <i class="bi bi-lightbulb"></i>
+
+                        <h3>Aprender cosas nuevas</h3>
+
+                        <p>
+                            Investigar, experimentar y
+                            desarrollar habilidades que
+                            me permitan afrontar nuevos retos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MIS HABILIDADES -->
+    <section class="habilidades">
+
+        <div class="container text-center">
+
+            <h2 class="seccion-titulo texto-blanco">
+                Mi zona de aprendizaje
+            </h2>
+
+            <h3 class="seccion-descripcion">
+                Algunas tecnologías y herramientas con las
+                que estoy trabajando.
+            </h3>
+
+            <div class="mt-4">
+
+                <span class="habilidad-etiqueta">
+                    <i class="bi bi-filetype-html"></i> HTML
+                </span>
+
+                <span class="habilidad-etiqueta">
+                    <i class="bi bi-filetype-css"></i> CSS
+                </span>
+
+                <span class="habilidad-etiqueta">
+                    <i class="bi bi-bootstrap"></i> Bootstrap
+                </span>
+
+                <span class="habilidad-etiqueta">
+                    <i class="bi bi-filetype-js"></i> JavaScript
+                </span>
+
+                <span class="habilidad-etiqueta">
+                    <i class="bi bi-database"></i> Bases de datos
+                </span>
+
+                <span class="habilidad-etiqueta">
+                    <i class="bi bi-github"></i> GitHub
+                </span>
+
+            </div>
+
+            <p class="text-light mt-4">
+                No necesito saberlo todo para comenzar.
+                Lo importante es seguir avanzando.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FRASE FINAL -->
+    <section class="frase-final">
+
+        <div class="container">
+
+            <h2>
+                "Las grandes ideas comienzan con una línea de código"
+            </h2>
+
+            <p class="mt-3">
+                Todavía queda mucho por aprender,
+                muchos proyectos por crear y muchas ideas por probar.
+            </p>
+
+            <a href="../index.html" class="btn-volver">
+                <i class="bi bi-house-door-fill"></i>
+                Volver al inicio
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="sobre-footer seccion-oscura d-flex flex-column
+        align-items-center justify-content-center">
+
+        <img class="footer-logo"
+            src="../fotos_testigos/ccccrecap-goat.gif"
+            alt="Cabra animada">
+
+        <p class="footer-texto text-center">
+            Hago locuras.<br>
+            ¡Hagamos locuras, juntos!
+        </p>
+
+        <div class="iconos-redes-sociales d-flex
+            flex-wrap align-items-center justify-content-center">
+
+            <a href="https://github.com/ArontiDumpti"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub">
+
+                <i class="bi bi-github"></i>
+            </a>
+
+            <a href="mailto:segura_20_30@hotmail.com"
+                aria-label="Correo electrónico">
+
+                <i class="bi bi-envelope-check"></i>
+            </a>
+
+        </div>
+
+        <div class="derechos-de-autor">
+            Creado por Aaron ©
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 </body>
 </html>
