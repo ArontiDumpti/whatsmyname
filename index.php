@@ -392,6 +392,11 @@
         </div>
     </section>
 
+    <?php
+        header("Location: sobre-mi.php");
+        exit();
+    ?>
+
     <!-- SECCION Footer  -->
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
         <img class="footer-logo" src="fotos_testigos/ccccrecap-goat.gif" alt="cabra twti">
