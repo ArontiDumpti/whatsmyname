@@ -1,5 +1,5 @@
 <?php
-    header("Location: sobre-mi.php");
+    header("Location: sobremi.php");
     exit();
 ?>
 
